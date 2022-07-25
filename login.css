@@ -15,7 +15,12 @@ html, body {
   height: 70%;
 }
 
+.body-login .logo {
+  padding: 2.8rem 0;
+}
+
 form {
+  text-align: center;
   font-family: var(--font-primary);
   padding: var(--padding-body);
 }
@@ -48,10 +53,13 @@ form .row label {
 }
 
 form .row input {
+  width: 100%;
+  font-family: var(--font-primary);
   background: transparent;
   border: none;
   outline: none;
   font-size: var(--sz-small);
+  color: var(--color-white);
   padding: 0;
   margin: 0;
 }
@@ -77,7 +85,8 @@ form button {
   background: var(--color-white);
   border-radius: var(--border-radius-normal);
   width: 100%;
-  padding: 10px;
+  font-weight: 600;
+  padding: 1rem;
   margin-top: 40px;
   font-size: var(--sz-under-medium);
 }
@@ -105,20 +114,6 @@ form button {
 
 /* media screen */
 @media screen and (min-width: 640px) {
-  .body-login {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .body-login .logo {
-    padding: 2.8rem 0;
-  }
   .body-login form {
     text-align: center;
     width: 30%;

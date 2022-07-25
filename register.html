@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <div class="body-login">
+    <div class="body-register">
         <form action="">
             <img src="images/logo.svg" alt="" class="logo"/>
             <h1>Login</h1>
@@ -21,53 +21,18 @@
                 <label><img src="images/password.svg" alt=""></label>
                 <input type="text" placeholder="Password">
             </div>
-            <div class="forgot-password">
-                <a href="#">Forgot password?</a>
+            <div class="row">
+                <label><img src="images/password.svg" alt=""></label>
+                <input type="text" placeholder="Confirm password">
             </div>
-            <button type="submit">Login</button>
+            <button type="submit">Create Your Account</button>
         </form>
     </div>
 
     <div class="register">
-        <a href="#">
-            <span>New to AraTicket?</span> <strong>Register</strong>
+        <a href="login.html">
+            <span>Already have an account in AraTicket?</span> <strong>Login</strong>
         </a>
-    </div>
-
-    <div class="popups">
-        <div class="single-popup">            
-            <div class="border-behind"></div>
-            <div class="X">
-                X
-            </div>
-            <h3>Discover Amazing Events!</h3>
-            <p>Discover the latest events by clicking on "Discover".</p>
-            <div class="discover-group">
-                <a href="" class="button">Discover</a>
-            </div>    
-        </div>
-
-        <div class="single-popup">            
-            <div class="border-behind"></div>
-            <div class="X">
-                X
-            </div>
-            <h3>Share <span class="AraTicket">Ara Ticket!</span></h3>
-            <div class="social-media-group">
-                <a>
-                    <img src="images/facebook-f.svg" alt="facebook">
-                </a>
-                <a>
-                    <img src="images/twitter.svg" alt="facebook">
-                </a>
-                <a>
-                    <img src="images/facebook-messenger.svg" alt="facebook">
-                </a>
-            </div>
-            <div class="copy-url">
-                <input type="text" name="referral" id="ref" placeholder="https://tckt.app/785z2c3c56" readonly><a href="#" class="button-copy"><img src="images/copy-url.svg" class="unhovered" alt="copy url"><img src="images/copy-url-hoverd.svg" class="hovered" alt="copy url"></a>
-            </div>
-        </div>
     </div>
 </body>
 </html>

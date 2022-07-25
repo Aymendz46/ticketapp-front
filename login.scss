@@ -8,9 +8,15 @@ html, body {
     display: flex;
     flex-direction: column-reverse;
     height: 70%;
+
+    .logo
+    {
+        padding: 2.8rem 0;
+    }
 }
 
 form {
+    text-align: center;
     font-family: var(--font-primary);
     padding: var(--padding-body);
     h1 {
@@ -35,10 +41,13 @@ form {
         }
 
         input {
+            width: 100%;
+            font-family: var(--font-primary);
             background: transparent;
             border: none;
             outline: none;
             font-size: var(--sz-small);
+            color: var(--color-white);
             padding: 0;
             margin: 0;
         }
@@ -59,7 +68,8 @@ form {
         background: var(--color-white);
         border-radius: var(--border-radius-normal);
         width: 100%;
-        padding: 10px;
+        font-weight: 600;
+        padding: 1rem;
         margin-top: 40px;
         font-size: var(--sz-under-medium);
     }
@@ -84,15 +94,6 @@ form {
 {
     .body-login
     {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .logo
-        {
-            padding: 2.8rem 0;
-        }
-
         form
         {
             text-align: center;
