@@ -1,7 +1,7 @@
 
 .body-top {
     //background: linear-gradient(180deg, #181E27 0%, rgba(32, 37, 46, 0.96748) 70%, rgba(255, 255, 255, 0) 70%);;
-    background-color: var(--color-theme);
+    background: linear-gradient(180deg, #203354 0%, #203354 45.31%, rgba(255, 255, 255, 0) 28.32%);
 }
 
 /* ------------------------------------
@@ -318,7 +318,7 @@ header {
 @media screen and (min-width: 640px)
 {
     .body-top {
-        background-color: var(--color-theme-light);
+        background: var(--color-theme-light);
 
         header {
             nav {

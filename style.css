@@ -1,5 +1,6 @@
 .body-top {
-  background-color: var(--color-theme);
+  background: -webkit-gradient(linear, left top, left bottom, from(#203354), color-stop(45.31%, #203354), color-stop(28.32%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #203354 0%, #203354 45.31%, rgba(255, 255, 255, 0) 28.32%);
 }
 
 /* ------------------------------------
@@ -366,7 +367,7 @@ header {
 
 @media screen and (min-width: 640px) {
   .body-top {
-    background-color: var(--color-theme-light);
+    background: var(--color-theme-light);
   }
   .body-top header nav {
     display: -webkit-box;
