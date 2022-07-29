@@ -1,7 +1,7 @@
 
 .body-top {
     //background: linear-gradient(180deg, #181E27 0%, rgba(32, 37, 46, 0.96748) 70%, rgba(255, 255, 255, 0) 70%);;
-    background: linear-gradient(180deg, #203354 0%, #203354 45.31%, rgba(255, 255, 255, 0) 28.32%);
+    background: linear-gradient(180deg, #203354 0%, #203354 39.31%, #F8F8F8 28.32%);
 }
 
 /* ------------------------------------
@@ -12,6 +12,18 @@ header {
     justify-content: space-between;
     padding: 0 var(--padding-body);
     padding-top: var(--padding-body);
+
+    nav
+    {
+        ul
+        {
+
+            &.mobile
+            {
+                display: none;
+            }
+        }
+    }
 }
 
 /* ------------------------------------
@@ -63,6 +75,11 @@ header {
             width: 50%;
             margin-left: 1rem;
             align-items: center;
+            
+            path
+            {
+                fill: var(--color-true-white);
+            }
         }
     }
 
@@ -112,7 +129,7 @@ header {
         border-radius: var(--border-radius-normal);
         padding: 10px;
         margin: 0 20px;
-        box-shadow: 2px 17px 41px -14px rgba(0,0,0,0.29);
+        box-shadow: 2px 17px 14px -21px rgba(0, 0, 0, 0.18);;
 
         .image {
             width: 100%;
@@ -156,6 +173,7 @@ header {
                 margin-bottom: 5px;
 
                 .titles {
+                    font-family: var(--font-primary);
                     display: flex;
                     flex-direction: column;
                     .title {
@@ -167,9 +185,7 @@ header {
                     }
                     .promoter {
                         font-size: calc(var(--sz-extra-small) - 2px);
-                        color: var(--color-lighter);
-                        padding-left: 10px;
-                    }
+                        color: var(--color-lighter);                    }
                 }
                 .duration {
                     span {
@@ -238,8 +254,7 @@ header {
     }
 
     .category-horizental-container {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        display: flex;
         /*width: 200%;*/
         overflow: hidden;
         overflow-x: scroll;
@@ -272,7 +287,7 @@ header {
 .join {
     text-align: center;
     font-family: var(--font-primary);
-    margin-top: 40px;
+    padding: 40px 0;
     .option {
         h2 {
             font-size: var(--sz-big);
@@ -299,7 +314,7 @@ header {
             margin-bottom: 20px;
             display: flex;
             justify-content: center;
-            padding: 10px 20px;
+            padding: 15px 20px;        
         }
 
         h5 {
@@ -321,6 +336,9 @@ header {
         background: var(--color-theme-light);
 
         header {
+            padding: .8rem 1.8rem;
+            background: #fff;
+
             nav {
                 display: flex;
                 width: 100%;
@@ -386,7 +404,14 @@ header {
 
             button
             {
-                color: var(--color-theme);
+
+                svg
+                {
+                    path
+                    {
+                        fill: var(--color-theme);
+                    }
+                }
             }
         }
     }
@@ -406,9 +431,7 @@ header {
             }
             
             h4 {
-                font-family: var(--font-primary);
-                color: var(--color-theme);
-                font-size: var(--sz-under-medium);
+                display: none;
             }
 
             a {
@@ -423,68 +446,102 @@ header {
 
         .card-horizental-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             justify-items: center;
-            gap: 20px;
+            gap: 40px;
+            overflow: unset;
             white-space: nowrap;
-            padding: 0 0 1.2rem 0;
-        }
-
-        .card {
-
-
-            .image {
+            padding: 0 0 1.2rem 0;        
+            
+            .card {
+                .image {
 
 
-                img.preview {
+                    img.preview {
 
+                    }
+
+                    .bookmark {
+
+                    }
+
+                    .date {
+
+                    }
                 }
 
-                .bookmark {
+                .details {
+                    .row {
 
-                }
 
-                .date {
+                        .titles {
 
+                            .title {
+
+                                font-size: var(--sz-under-medium)
+
+                            }
+                            .promoter {
+                                font-size: var(--sz-small)
+                            }
+                        }
+                        .duration {
+                            span {
+                                font-size: var(--sz-under-medium)
+                            }
+                        }
+
+                        .location {
+
+                            img {
+                                width: 8px;
+                            }
+                            span {
+
+                            }
+                        }
+
+                        .price {
+                            span {
+                            }
+                        }
+                        
+                    }
                 }
             }
+        }
 
-            .details {
-                .row {
+    }
 
+    .event-categories
+    {
+        .category-horizental-container
+        {
+            display: flex;
+            gap: 10px;
+            overflow: unset;
+            padding: 0 var(--padding-body-lg) 1.2em var(--padding-body-lg);
 
-                    .titles {
-
-                        .title {
-
-                        }
-                        .promoter {
-
-                        }
-                    }
-                    .duration {
-                        span {
-
-                        }
-                    }
-
-                    .location {
-
-                        img {
-                            width: 8px;
-                        }
-                        span {
-
-                        }
-                    }
-
-                    .price {
-                        span {
-                        }
-                    }
-                    
-                }
+            .category
+            {
+                margin: 0;
             }
         }
     }
+
+    .join
+    {
+        padding: 40px 10rem;
+    }
 } 
+
+@media screen and (min-width: 1088px)
+{
+    .popular-events
+    {
+        .card-horizental-container
+        {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

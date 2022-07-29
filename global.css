@@ -41,14 +41,17 @@ body {
   margin: 0;
 }
 
+header {
+  padding: .8rem 1.8rem;
+  background: #fff;
+}
+
 /* ------------------------------------
             Footer
 ------------------------------------*/
 footer {
   border-top: 0.5px solid var(--color-lighter);
-  padding-top: 10px;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  padding: 30px;
   font-family: var(--font-primary);
   color: var(--color-lighter);
   text-align: center;

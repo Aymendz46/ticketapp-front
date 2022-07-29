@@ -1,6 +1,6 @@
 .body-top {
-  background: -webkit-gradient(linear, left top, left bottom, from(#203354), color-stop(45.31%, #203354), color-stop(28.32%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, #203354 0%, #203354 45.31%, rgba(255, 255, 255, 0) 28.32%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#203354), color-stop(39.31%, #203354), color-stop(28.32%, #F8F8F8));
+  background: linear-gradient(180deg, #203354 0%, #203354 39.31%, #F8F8F8 28.32%);
 }
 
 /* ------------------------------------
@@ -15,6 +15,10 @@ header {
           justify-content: space-between;
   padding: 0 var(--padding-body);
   padding-top: var(--padding-body);
+}
+
+header nav ul.mobile {
+  display: none;
 }
 
 /* ------------------------------------
@@ -90,6 +94,10 @@ header {
           align-items: center;
 }
 
+.search button svg path {
+  fill: var(--color-true-white);
+}
+
 /* ------------------------------------
             Popular events
 ------------------------------------*/
@@ -141,8 +149,8 @@ header {
   border-radius: var(--border-radius-normal);
   padding: 10px;
   margin: 0 20px;
-  -webkit-box-shadow: 2px 17px 41px -14px rgba(0, 0, 0, 0.29);
-          box-shadow: 2px 17px 41px -14px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 2px 17px 14px -21px rgba(0, 0, 0, 0.18);
+          box-shadow: 2px 17px 14px -21px rgba(0, 0, 0, 0.18);
 }
 
 .popular-events .card .image {
@@ -192,6 +200,7 @@ header {
 }
 
 .popular-events .card .details .row .titles {
+  font-family: var(--font-primary);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,7 +221,6 @@ header {
 .popular-events .card .details .row .titles .promoter {
   font-size: calc(var(--sz-extra-small) - 2px);
   color: var(--color-lighter);
-  padding-left: 10px;
 }
 
 .popular-events .card .details .row .duration span {
@@ -277,10 +285,9 @@ header {
 }
 
 .event-categories .category-horizental-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   /*width: 200%;*/
   overflow: hidden;
   overflow-x: scroll;
@@ -316,7 +323,7 @@ header {
 .join {
   text-align: center;
   font-family: var(--font-primary);
-  margin-top: 40px;
+  padding: 40px 0;
 }
 
 .join .option h2 {
@@ -352,7 +359,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 
 .join .option h5 {
@@ -368,6 +375,10 @@ header {
 @media screen and (min-width: 640px) {
   .body-top {
     background: var(--color-theme-light);
+  }
+  .body-top header {
+    padding: .8rem 1.8rem;
+    background: #fff;
   }
   .body-top header nav {
     display: -webkit-box;
@@ -434,8 +445,8 @@ header {
     color: var(--color-theme);
     font-size: var(--sz-big);
   }
-  .body-top .search button {
-    color: var(--color-theme);
+  .body-top .search button svg path {
+    fill: var(--color-theme);
   }
   /* ------------------------------------
                 Popular events
@@ -463,9 +474,7 @@ header {
     padding: 0 var(--padding-body-lg);
   }
   .popular-events .header h4 {
-    font-family: var(--font-primary);
-    color: var(--color-theme);
-    font-size: var(--sz-under-medium);
+    display: none;
   }
   .popular-events .header a {
     text-decoration: none;
@@ -476,15 +485,46 @@ header {
   .popular-events .card-horizental-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    gap: 20px;
+    gap: 40px;
+    overflow: unset;
     white-space: nowrap;
     padding: 0 0 1.2rem 0;
   }
-  .popular-events .card .details .row .location img {
+  .popular-events .card-horizental-container .card .details .row .titles .title {
+    font-size: var(--sz-under-medium);
+  }
+  .popular-events .card-horizental-container .card .details .row .titles .promoter {
+    font-size: var(--sz-small);
+  }
+  .popular-events .card-horizental-container .card .details .row .duration span {
+    font-size: var(--sz-under-medium);
+  }
+  .popular-events .card-horizental-container .card .details .row .location img {
     width: 8px;
+  }
+  .event-categories .category-horizental-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    overflow: unset;
+    padding: 0 var(--padding-body-lg) 1.2em var(--padding-body-lg);
+  }
+  .event-categories .category-horizental-container .category {
+    margin: 0;
+  }
+  .join {
+    padding: 40px 10rem;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .popular-events .card-horizental-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 /*# sourceMappingURL=style.css.map */
