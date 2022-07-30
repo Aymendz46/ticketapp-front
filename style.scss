@@ -95,6 +95,26 @@ header {
         font-size: var(--sz-extra-small);
       }
     }
+
+        a
+        {
+            display: flex;
+            background-color: var(--color-theme-light);
+            padding: calc(var(--padding-body) - .2rem);
+            margin-right: 10px;
+            gap: 5px;
+            text-decoration: none;
+            color: var(--color-theme);
+            font-family: var(--font-primary);
+            font-size: var(--sz-medium);
+            font-weight: 500;
+            border-radius: var(--border-radius-normal);
+
+            svg
+            {
+                width: 60%;
+            }
+        }
   }
 
   button {
@@ -693,20 +713,6 @@ header {
                     ::placeholder {
                         color: var(--color-theme);
                         font-size: var(--sz-big);
-                    }
-
-                    form
-                    {
-
-                        a
-                        {
-                            display: flex;
-                            gap: 5px;
-                            text-decoration: none;
-                            font-family: var(--font-primary);
-                            font-size: var(--sz-small);
-                            margin-left: 10px;
-                        }
                     }
                 }
 
