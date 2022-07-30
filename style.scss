@@ -22,6 +22,30 @@ header {
   background-color: var(--color-theme);
   z-index: 1000;
 
+  .user
+  {
+    display: flex;
+    align-items: center;
+
+      .dropdown
+      {
+          display: none;
+      }
+
+      span
+      {
+        color: var(--color-true-white);
+      }
+
+      svg
+      {
+          path
+          {
+              fill: var(--color-true-white);
+          }
+      }
+  }
+
   nav {
     z-index: 1000;
 
