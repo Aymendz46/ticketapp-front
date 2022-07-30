@@ -25,6 +25,7 @@ header {
   .user
   {
     display: flex;
+    gap: 5px;
     align-items: center;
 
       .dropdown
@@ -34,6 +35,8 @@ header {
 
       span
       {
+        font-family: var(--font-primary);
+        font-size: var(--sz-small);
         color: var(--color-true-white);
       }
 
