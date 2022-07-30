@@ -92,7 +92,7 @@ header {
 
       &::placeholder {
         color: var(--color-white);
-        font-size: var(--sz-small);
+        font-size: var(--sz-extra-small);
       }
     }
   }
@@ -693,6 +693,20 @@ header {
                     ::placeholder {
                         color: var(--color-theme);
                         font-size: var(--sz-big);
+                    }
+
+                    form
+                    {
+
+                        a
+                        {
+                            display: flex;
+                            gap: 5px;
+                            text-decoration: none;
+                            font-family: var(--font-primary);
+                            font-size: var(--sz-small);
+                            margin-left: 10px;
+                        }
                     }
                 }
 

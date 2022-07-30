@@ -93,22 +93,22 @@ header nav ul.links {
 
 .search form input::-webkit-input-placeholder {
   color: var(--color-white);
-  font-size: var(--sz-small);
+  font-size: var(--sz-extra-small);
 }
 
 .search form input:-ms-input-placeholder {
   color: var(--color-white);
-  font-size: var(--sz-small);
+  font-size: var(--sz-extra-small);
 }
 
 .search form input::-ms-input-placeholder {
   color: var(--color-white);
-  font-size: var(--sz-small);
+  font-size: var(--sz-extra-small);
 }
 
 .search form input::placeholder {
   color: var(--color-white);
-  font-size: var(--sz-small);
+  font-size: var(--sz-extra-small);
 }
 
 .search button {
@@ -789,6 +789,16 @@ header nav ul.links {
   .body-top .side-menu .container form .row .search ::placeholder {
     color: var(--color-theme);
     font-size: var(--sz-big);
+  }
+  .body-top .side-menu .container form .row .search form a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: var(--sz-small);
+    margin-left: 10px;
   }
   .body-top .side-menu .container form .row .price {
     padding: 0;
