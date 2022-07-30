@@ -366,6 +366,7 @@ header {
             border: solid .18rem var(--color-theme-secondary);
             height: 0;
             display: none;
+            transition: .5s ease;
 
             ul
             {

@@ -427,6 +427,8 @@ header nav ul.links {
     border: solid 0.18rem var(--color-theme-secondary);
     height: 0;
     display: none;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
   }
   header .user .dropdown ul {
     display: -webkit-box;
