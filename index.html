@@ -12,7 +12,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
     <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
 
-
     </head>
   <body>
     <header>
@@ -67,13 +66,15 @@
             <h4>Price</h4>
             <div class="price">
               <input
-                type="text"
+                type="number"
+                max="5"
                 placeholder="From 5$"
                 required
               />
               <input
-              type="text"
+              type="number"
               placeholder="25$ & up"
+              max="40"
               required/>
             </div>
             <div class="container">
@@ -81,15 +82,18 @@
                     <input type="range" min="1" max="100" value="50" class="slider">
                 </div>
             </div>
-
-            <p>
-                <label for="amount">Price range:</label>
-                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-              </p>
-               
-              <div id="slider-range"></div>
           </div>
+          <div class="row">
+            <h4>Price</h4>
+            <div class="price">
+                <input type="text" name="" id="amount" required>
+                <input type="text" name="" id="amount" required readonly>
+            </div>
+            <div id="slider-range"></div>
+
+          </div>   
         </form>
+        <a href="#" class="hide"></a>
       </div>
 
       <div class="event-container">
@@ -299,9 +303,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
+            </div>
 
-              <div class="card-container">
+            <div class="card-container">
                 <div class="card">
                   <div class="image">
                     <img class="preview" src="" width="260" height="150" alt="" />
@@ -333,7 +337,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+            </div>
           </div>
 
           <!-- Categories -->

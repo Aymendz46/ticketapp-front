@@ -436,10 +436,6 @@ header nav ul.links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     width: 25%;
     background-color: var(--color-true-white);
     position: absolute;
@@ -468,6 +464,37 @@ header nav ul.links {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+  }
+  .body-top .side-menu form .row .ui-widget.ui-widget-content {
+    margin-top: 2rem;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 100%;
+    height: 3.14px;
+    border-radius: 16px;
+    background: var(--color-theme-light);
+    outline: none;
+    border: none;
+  }
+  .body-top .side-menu form .row .ui-widget.ui-widget-content span.ui-slider-handle.ui-corner-all.ui-state-default {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--color-theme);
+    cursor: pointer;
+    top: -13px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+  }
+  .body-top .side-menu form .row .ui-widget.ui-widget-content .ui-slider-range.ui-corner-all.ui-widget-header {
+    background-color: var(--color-theme);
+    height: 8px;
+    border: none;
+    top: -3px;
   }
   .body-top .side-menu form .row h4 {
     color: var(--color-theme);
@@ -608,6 +635,7 @@ header nav ul.links {
         -ms-flex-align: center;
             align-items: center;
     background-color: var(--color-theme-light);
+    color: var(--color-theme);
     font-family: var(--font-primary);
     font-weight: 500;
     font-size: var(--sz-big);
@@ -721,8 +749,19 @@ header nav ul.links {
     text-decoration: none;
     font-weight: 500;
     font-family: var(--font-primary);
-    color: var(--color-theme);
-    font-size: calc(var(--sz-under-medium) - 2px);
+    color: var(--color-white);
+    font-size: calc(var(--sz-medium) - 2px);
+    background-color: var(--color-theme);
+    border-radius: var(--border-radius-normal);
+    padding: 0.8rem var(--padding-body);
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  .popular-events .header a:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-theme-light);
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
   }
   .popular-events .card-horizental-container {
     display: -ms-grid;
@@ -798,6 +837,12 @@ header nav ul.links {
   }
   .event-categories .category-horizental-container .category {
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px 20px;
+    font-size: var(--sz-under-medium);
+    gap: 9px;
   }
   .join {
     padding: 40px 10rem;
