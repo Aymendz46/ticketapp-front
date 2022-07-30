@@ -7,7 +7,13 @@
     <title>Home</title>
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="style.css" />
-  </head>
+
+    <script src="./range.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+
+
+    </head>
   <body>
     <header>
       <nav>
@@ -70,6 +76,18 @@
               placeholder="25$ & up"
               required/>
             </div>
+            <div class="container">
+                <div class="box">
+                    <input type="range" min="1" max="100" value="50" class="slider">
+                </div>
+            </div>
+
+            <p>
+                <label for="amount">Price range:</label>
+                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+              </p>
+               
+              <div id="slider-range"></div>
           </div>
         </form>
       </div>
@@ -366,5 +384,9 @@
 
     <!-- Footer -->
     <footer>Copyright Jervi 2022</footer>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+    <script  src="./script.js"></script>
   </body>
 </html>

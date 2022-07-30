@@ -440,7 +440,7 @@ header nav ul.links {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 30%;
+    width: 25%;
     background-color: var(--color-true-white);
     position: absolute;
     z-index: 100;
@@ -449,7 +449,15 @@ header nav ul.links {
     padding: 1rem calc(var(--padding-body) + 2rem);
   }
   .body-top .side-menu form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
+    gap: 30px;
   }
   .body-top .side-menu form .row {
     display: -webkit-box;
@@ -481,6 +489,50 @@ header nav ul.links {
     font-weight: 500;
     font-size: var(--sz-medium);
     color: var(--color-secondary);
+  }
+  .body-top .side-menu form .row .container {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body-top .side-menu form .row .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 45px;
+  }
+  .body-top .side-menu form .row .slider {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 100%;
+    height: 3.14px;
+    border-radius: 16px;
+    background: var(--color-theme-light);
+    outline: none;
+  }
+  .body-top .side-menu form .row .slider:hover {
+    cursor: pointer;
+  }
+  .body-top .side-menu form .row .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+            appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--color-theme);
+    cursor: pointer;
   }
   .body-top .side-menu form .row .search {
     padding: 0;
@@ -535,6 +587,7 @@ header nav ul.links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 10px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
