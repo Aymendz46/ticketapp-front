@@ -16,6 +16,16 @@ filter.onclick = () =>
 
 arrow.onclick = () =>
 {
-    profile.style.height = "220px";
-    profile.style.display = "flex";
+    if (profile.style.display === "none")
+    {
+        profile.style.height = "220px";
+        profile.style.display = "flex";
+        profile.style.transition = "1s ease";
+    }
+
+    else {
+        profile.style.height = "0px";
+        profile.style.display = "none";
+        profile.style.transition = "1s ease";
+    }
 }
