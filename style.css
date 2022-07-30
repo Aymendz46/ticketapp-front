@@ -384,7 +384,39 @@ header nav ul.links {
 @media screen and (min-width: 640px) {
   header {
     padding: 0.8rem 1.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     background: #fff;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .logo svg {
+    width: 90%;
+  }
+  header .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 21%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .user span {
+    font-family: var(--font-primary);
+    color: var(--color-theme);
+    font-size: calc(var(--sz-small) - .15rem);
+    font-weight: 700;
+    max-width: 94px;
+    width: 100%;
   }
   header nav {
     display: -webkit-box;
@@ -393,6 +425,7 @@ header nav ul.links {
     width: 100%;
   }
   header nav ul {
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -401,7 +434,7 @@ header nav ul.links {
         -ms-flex-pack: center;
             justify-content: center;
     list-style: none;
-    gap: 10px;
+    gap: 30px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -417,10 +450,18 @@ header nav ul.links {
     font-weight: 500;
     color: #181e27aa;
     font-size: calc(var(--sz-big));
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
   }
   header nav ul li a.active {
     color: var(--color-theme);
-    font-weight: 600;
+    font-weight: 700;
+  }
+  header nav ul li a:hover {
+    color: var(--color-theme);
+    font-weight: 700;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
   }
   .body-top {
     background: var(--color-theme-light);
@@ -915,7 +956,8 @@ header nav ul.links {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 6px;
+    gap: 10px;
+    margin-top: 1rem;
   }
   .join .option h2 {
     font-size: var(--sz-large);
