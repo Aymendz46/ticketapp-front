@@ -352,6 +352,62 @@ header {
         width: 21%;
         justify-content: space-between;
 
+        .dropdown
+        {
+            background: var(--color-true-white);
+            width: 200px;
+            height: 400px;
+            position: absolute;
+            top: 65px;
+            right: 29px;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+            border: solid .18rem var(--color-theme-secondary);
+            height: 0;
+            display: none;
+
+            ul
+            {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                justify-content: center;
+                width: 100%;
+                padding: 2rem;
+                padding-top: .1rem;
+                margin: 0;
+
+                li
+                {
+                    border-top: solid 1px var(--color-theme-light);
+                    list-style: none;
+                    padding-top: 1rem;
+
+                    &:nth-child(1)
+                    {
+                       border-top: none; 
+                    }
+
+                    a
+                    {
+                        font-weight: 500;
+                        font-size: var(--sz-small);
+                        font-family: var(--font-primary);
+                        color: var(--color-lighter);
+                        text-decoration: none;
+                        transition: .5s ease;
+
+                        &:hover
+                        {
+                            color: var(--color-theme);
+                            transition: .5s ease;
+                        }
+                    }
+                }
+            }
+        }
+
         span
         {
             font-family: var(--font-primary);

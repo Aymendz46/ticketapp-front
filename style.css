@@ -410,6 +410,63 @@ header nav ul.links {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  header .user .dropdown {
+    background: var(--color-true-white);
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 65px;
+    right: 29px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 1000;
+    border: solid 0.18rem var(--color-theme-secondary);
+    height: 0;
+    display: none;
+  }
+  header .user .dropdown ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    padding-top: .1rem;
+    margin: 0;
+  }
+  header .user .dropdown ul li {
+    border-top: solid 1px var(--color-theme-light);
+    list-style: none;
+    padding-top: 1rem;
+  }
+  header .user .dropdown ul li:nth-child(1) {
+    border-top: none;
+  }
+  header .user .dropdown ul li a {
+    font-weight: 500;
+    font-size: var(--sz-small);
+    font-family: var(--font-primary);
+    color: var(--color-lighter);
+    text-decoration: none;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  header .user .dropdown ul li a:hover {
+    color: var(--color-theme);
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
   header .user span {
     font-family: var(--font-primary);
     color: var(--color-theme);
