@@ -917,6 +917,9 @@ header nav ul.links {
     max-width: 94px;
     width: 100%;
   }
+  header .user a svg path {
+    fill: var(--color-theme);
+  }
   header nav {
     display: -webkit-box;
     display: -ms-flexbox;
