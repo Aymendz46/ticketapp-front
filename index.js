@@ -6,7 +6,11 @@ let arrow = document.querySelector(".arrow-down")
 
 hide.onclick = () => 
 {
-    sidebar.style.transform = "translateX(-800px)";
+    if(sidebar.classList[1] == 'hide')
+        sidebar.classList.toggle = 'hide';
+
+    else
+        sidebar.classList.toggle = 'show';
 };
 
 filter.onclick = () =>
@@ -16,16 +20,12 @@ filter.onclick = () =>
 
 arrow.onclick = () =>
 {
-    if (profile.style.display === "none")
+    if (profile.classList[1] == 'hide')
     {
-        profile.style.height = "220px";
-        profile.style.display = "flex";
-        profile.style.transition = "1s ease";
+        profile.classList.toggle('drop');
     }
 
     else {
-        profile.style.height = "0px";
-        profile.style.display = "none";
-        profile.style.transition = "1s ease";
+        profile.classList.toggle('drop');
     }
 }
