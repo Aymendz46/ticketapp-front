@@ -17,9 +17,19 @@
     z-index: 100;
     min-height: 1202px;
     height: 100vh;
-    transform: translateX(-800px);
-    transition: .9s ease;
     
+    &.show
+    {
+      transition: .9s ease;
+      transform: translateX(0px);
+    }
+
+    &.hide
+    {
+      transition: .9s ease;
+      transform: translateX(-800px);
+    }
+
     .row
     {
 
@@ -702,18 +712,16 @@ header {
             {
                 display: flex;
                 flex-direction: column;
-                gap: 15px;
                 justify-content: center;
                 width: 100%;
                 padding: 1.5rem;
-                padding-top: .1rem;
                 margin: 0;
 
                 li
                 {
                     border-top: solid 1px var(--color-theme-light);
                     list-style: none;
-                    padding-top: 1rem;
+                    padding: 0 !important;
 
                     &:nth-child(1)
                     {
@@ -831,9 +839,20 @@ header {
       z-index: 100;
       min-height: 1202px;
       height: 100vh;
-      transform: translateX(-800px);
       transition: .9s ease;
       
+      &.show
+      {
+        transition: .9s ease;
+        transform: translateX(0px);
+      }
+  
+      &.hide
+      {
+        transition: .9s ease;
+        transform: translateX(-600px);
+      }
+
       .row
       {
 

@@ -7,15 +7,31 @@ let arrow = document.querySelector(".arrow-down")
 hide.onclick = () => 
 {
     if(sidebar.classList[1] == 'hide')
-        sidebar.classList.toggle = 'hide';
+    {
+        sidebar.classList.toggle('hide');
+        sidebar.classList.toggle('show');
+    }
 
     else
-        sidebar.classList.toggle = 'show';
+    {
+        sidebar.classList.toggle('hide');
+        sidebar.classList.toggle('show');
+    }
 };
 
 filter.onclick = () =>
 {
-    sidebar.style.transform = "translateX(0px)";
+    if(sidebar.classList[1] == 'show')
+    {
+        sidebar.classList.toggle('hide');
+        sidebar.classList.toggle('show');
+    }
+
+    else
+    {
+        sidebar.classList.toggle('hide');
+        sidebar.classList.toggle('show');
+    }
 }
 
 arrow.onclick = () =>
@@ -23,9 +39,11 @@ arrow.onclick = () =>
     if (profile.classList[1] == 'hide')
     {
         profile.classList.toggle('drop');
+        profile.classList.toggle('hide');
     }
 
     else {
         profile.classList.toggle('drop');
+        profile.classList.toggle('hide');
     }
 }
