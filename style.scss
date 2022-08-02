@@ -8,7 +8,6 @@
   );
 
   .side-menu {
-    display: flex;
     flex-direction: column;
     width: 100%;
     background-color: var(--color-true-white);
@@ -17,11 +16,13 @@
     z-index: 100;
     min-height: 1202px;
     height: 100vh;
-    
+    display: none;
+
     &.show
     {
       transition: .9s ease;
       transform: translateX(0px);
+      display: flex;
     }
 
     &.hide
@@ -831,7 +832,6 @@ header {
 
     .side-menu {
       margin-top: 4rem;
-      display: flex;
       flex-direction: column;
       width: 35%;
       background-color: var(--color-true-white);
@@ -840,11 +840,13 @@ header {
       min-height: 1202px;
       height: 100vh;
       transition: .9s ease;
+      display: none;
       
       &.show
       {
         transition: .9s ease;
         transform: translateX(0px);
+        display: flex;
       }
   
       &.hide
