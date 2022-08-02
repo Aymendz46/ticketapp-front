@@ -65,13 +65,24 @@ form .row input {
 }
 
 form button {
-  background: var(--color-white);
+  color: var(--color-secondary);
+  background-color: var(--color-true-white);
   border-radius: var(--border-radius-normal);
   width: 100%;
   font-weight: 600;
   padding: 1rem;
   margin-top: 40px;
   font-size: var(--sz-under-medium);
+  border: none;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+form button:hover {
+  color: var(--color-theme);
+  background-color: var(--color-theme-secondary);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .register {

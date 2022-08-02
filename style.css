@@ -317,6 +317,63 @@ header {
   z-index: 1000;
 }
 
+header .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .login .btn-login {
+  font-family: var(--font-primary);
+  font-size: var(--sz-under-medium);
+  font-weight: 500;
+  background: var(--color-theme);
+  border: 1.8px solid var(--color-theme);
+  padding: .65rem 1.8rem;
+  text-decoration: none;
+  color: var(--color-true-white);
+  border-radius: var(--border-radius-normal);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+header .login .btn-login:hover {
+  color: var(--color-theme);
+  background-color: var(--color-theme-secondary);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+header .login .btn-signup {
+  font-family: var(--font-primary);
+  font-size: var(--sz-under-medium);
+  font-weight: 500;
+  background: none;
+  text-decoration: none;
+  border: 1.8px solid var(--color-theme);
+  padding: .65rem 1.4rem;
+  color: var(--color-theme);
+  border-radius: var(--border-radius-normal);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+header .login .btn-signup:hover {
+  color: var(--color-true-white);
+  background-color: var(--color-theme);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
 header .user {
   display: -webkit-box;
   display: -ms-flexbox;

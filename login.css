@@ -13,6 +13,12 @@ html, body {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   height: 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .body-login .logo {
@@ -82,13 +88,24 @@ form .forgot-password a {
 }
 
 form button {
-  background: var(--color-white);
+  color: var(--color-secondary);
+  background-color: var(--color-true-white);
   border-radius: var(--border-radius-normal);
   width: 100%;
   font-weight: 600;
   padding: 1rem;
   margin-top: 40px;
   font-size: var(--sz-under-medium);
+  border: none;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+form button:hover {
+  color: var(--color-theme);
+  background-color: var(--color-theme-secondary);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .register {
